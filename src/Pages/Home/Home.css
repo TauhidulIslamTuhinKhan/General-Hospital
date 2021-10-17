@@ -1,0 +1,15 @@
+/* .banner {
+    background-image: url('');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+} */
+
+.banner img {
+    min-height: 100vh;
+}
+
+.carousel-caption {
+    bottom: 50%;
+}
