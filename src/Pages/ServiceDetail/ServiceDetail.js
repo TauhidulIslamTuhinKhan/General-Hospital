@@ -8,15 +8,13 @@ const ServiceDetail = () => {
         const url = `/services.JSON/${servicekey}`;        
         fetch(url)
         .then(res => res.json())
-        .then(data=> console.log(data));
+        .then(data=> setDetails(data));
     }, [])
     // console.log(servicekey);
     return (
-        <div>
-            <h2>This details : {servicekey}</h2>
-            <div>
-               <h4>{details?.serviceName}</h4>
-            </div>
+        <div className="container">
+            <h2 className="text-center"> Details : {servicekey}</h2>            
+            <h4>{details?.serviceName}</h4>            
         </div>
     );
 };

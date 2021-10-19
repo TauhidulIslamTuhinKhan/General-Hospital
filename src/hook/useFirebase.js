@@ -12,11 +12,13 @@ const useFirebase = () => {
     const [email, setEmail]= useState('');
     const [password, setPassword]= useState('');
     const [isSignin, setisSignin] =useState(false);
+    const [isLoading, setIsLoading] = useState(true);
 
     const auth = getAuth();
 
     
     const signInWithGoogle = () => {
+        setIsLoading(true);
         const googleProvider = new GoogleAuthProvider();
         signInWithPopup(auth, googleProvider)
         .then(result => {
@@ -27,22 +29,32 @@ const useFirebase = () => {
         .catch(error => {
             setError(error.message);
         })
+        .finally(() => setIsLoading(false));
     }
+// observe user state change
+    useEffect(() => {
+     const unsubscribe = onAuthStateChanged(auth, user => {
+          if (user) {
+              setUser(user);
+          }
+          else {
+            setUser({})
+          }
+          setIsLoading(false);
+      });
+      return () => unsubscribe;
+  }, []);
 
     const signout = () => {
+      setIsLoading(true);
         signOut(auth)
         .then(() => {
             setUser({});
         })
+        .finally(() => setIsLoading(false));
     }
 
-    useEffect(() => {
-        onAuthStateChanged(auth, user => {
-            if (user) {
-                setUser(user);
-            }
-        })
-    }, []);
+   
 
 
       const handleNameChange = (e) =>{
@@ -123,7 +135,8 @@ const useFirebase = () => {
         handleNameChange,
         handleEmailChange,
         handlePasswordChange,
-        handleSignup
+        handleSignup,
+        isLoading
         
     }
 }

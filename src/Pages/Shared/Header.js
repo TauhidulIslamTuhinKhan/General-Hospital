@@ -8,8 +8,8 @@ import './Header.css'
 const Header = () => {
     const {user, signout} = useAuth();
     return (
-        <div>
-            <Navbar  expand="lg">
+        <>
+            <Navbar collapseOnSelect  expand="lg">
                 <Container>
                 <NavLink to="/home"><img className="logo-img" src={logo} alt="" /></NavLink>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -20,7 +20,7 @@ const Header = () => {
                      <NavLink className="header-text" to="/services" activeStyle={{ fontWeight: "bold", color: "red" }}>Services </NavLink>      
                      <NavLink className="header-text" to="/doctors" activeStyle={{ fontWeight: "bold", color: "red" }}> Doctors </NavLink>  
                      <span> {user.displayName} </span>     
-                     {!user?.displayName ? <> <NavLink className="header-text" to="/signup" activeStyle={{ fontWeight: "bold", color: "red" }}> Sign up </NavLink>      
+                     {!user?.email ? <> <NavLink className="header-text" to="/signup" activeStyle={{ fontWeight: "bold", color: "red" }}> Sign up </NavLink>      
                      <NavLink className="header-text" to="/signin" activeStyle={{ fontWeight: "bold", color: "red" }}> Sign in </NavLink>  </>  
                       :
                      (<button onClick={signout} className="btn btn-danger">Sign out</button>) }  
@@ -28,7 +28,7 @@ const Header = () => {
                 </Navbar.Collapse>
                 </Container>
             </Navbar>
-        </div>
+        </>
     );
 };
 

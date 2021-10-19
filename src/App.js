@@ -12,6 +12,9 @@ import About from './Pages/About/About';
 import NotFound from './Pages/NotFound/NotFound';
 import Services from './Pages/Services/Services';
 import Doctors from './Pages/Doctors/Doctors';
+import PrivateRoute from './Pages/PrivateRoute/PrivateRoute';
+
+
 
 function App() {
   return (
@@ -26,22 +29,22 @@ function App() {
             <Route exact path="/home">
               <Home></Home>
             </Route>
-            <Route exact path="/about">
+            <Route path="/about">
               <About></About>
             </Route>
-            <Route exact path="/services">
+            <PrivateRoute path="/services">
              <Services></Services>
-            </Route>
-            <Route exact path="/doctors">
+            </PrivateRoute>
+            <PrivateRoute exact path="/doctors">
              <Doctors></Doctors>
-            </Route>
-            <Route exact path="/servicedetail/:servicekey">
+            </PrivateRoute>
+            <PrivateRoute  path="/servicedetail/:servicekey">
               <ServiceDetail></ServiceDetail>
-            </Route>
-            <Route exact path="/signup">
+            </PrivateRoute>
+            <Route  path="/signup">
               <Signup></Signup>
             </Route>
-            <Route exact path="/signin">
+            <Route  path="/signin">
               <Signin></Signin>
             </Route>
             <Route path="*">
