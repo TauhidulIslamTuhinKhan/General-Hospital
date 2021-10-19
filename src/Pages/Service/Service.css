@@ -1,0 +1,9 @@
+
+.card {
+    box-shadow: 5px 5px 20px 5px #616060;
+}
+.card-title {
+    font-size: 32px;
+    font-weight: 600;
+    padding: 10px 0;
+}

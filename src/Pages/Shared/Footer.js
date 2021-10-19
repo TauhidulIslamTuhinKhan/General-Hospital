@@ -2,12 +2,13 @@ import React from 'react';
 import { Table } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone, faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import './Footer.css'
 
 const Footer = () => {
     const phone = <FontAwesomeIcon icon={faPhone} />
     const arrow = <FontAwesomeIcon icon={faArrowRight} />
     return (
-        <div>
+        <div className="footer">
             <div className="container">
                 <div className="row">
                     <div className="col-lg-4">
@@ -43,7 +44,10 @@ const Footer = () => {
                         <p>{arrow}X-ray</p>
                     </div>
                     <div className="col-lg-4">
-                        <h4>Social Links</h4>
+                        <h4>Contact Us</h4>
+                        <p>{phone}+12345678901</p>
+                        <p>Office Address: 36, Banglabazar, Dhaka-1000</p>
+                        <p>Website : www.nobarungeneral.hospital.com</p>
                     </div>
                 </div>
             </div>
