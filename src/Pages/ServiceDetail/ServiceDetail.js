@@ -1,20 +1,31 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router';
+import { useParams } from 'react-router-dom';
 
 const ServiceDetail = () => {
-    const [details, setDetails] = useState({})
+    
     const {servicekey} = useParams();
-    useEffect( ()=> {
-        const url = `/services.JSON/${servicekey}`;        
-        fetch(url)
+    const [details, setDetails] = useState([]);
+    const [singleService, setSingleService] = useState({});
+    useEffect( ()=> {                
+        fetch('/servicedetails.json')
         .then(res => res.json())
-        .then(data=> setDetails(data));
+        .then(data=> setDetails(data.hospitalService));
     }, [])
+
+    useEffect(()=>{
+       const foundService = details.find(detail=>detail.key===servicekey)
+       setSingleService(foundService)
+    }, [details])
     // console.log(servicekey);
     return (
-        <div className="container">
-            <h2 className="text-center"> Details : {servicekey}</h2>            
-            <h4>{details?.serviceName}</h4>            
+        <div className="container text-center">
+            <div className="card mb-5" style={{ width: '25rem',}}>
+                <h5 className="card-title text-center">{singleService?.serviceName}</h5>
+                <img src={singleService?.image} className="card-img-top" alt="..."/>
+                <div className="card-body">                    
+                    <p className="card-text">{singleService?.description}</p>                     
+                </div>                
+            </div>            
         </div>
     );
 };

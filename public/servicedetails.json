@@ -1,0 +1,80 @@
+{
+    "hospitalService":[
+
+            {
+                "key": "10000101",        
+                "serviceName": "SURGERY",    
+                "image": "https://images.pexels.com/photos/3376790/pexels-photo-3376790.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",        
+                "description": "Surgery is a medical or dental specialty that uses operative manual and instrumental techniques on a person to investigate or treat a pathological condition such as a disease or injury, to help improve bodily function, appearance, or to repair unwanted ruptured areas."        
+            },
+                
+            {
+                "key": "10000102",        
+                "serviceName": "EYE CARE",    
+                "image": "https://images.pexels.com/photos/5752328/pexels-photo-5752328.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",        
+                "description": "The eye is our organ of sight. The eye has a number of components which include but are not limited to the cornea, iris, pupil, lens, retina, macula, optic nerve, choroid and vitreous. Cornea: clear front window of the eye that transmits and focuses light into the eye"        
+            },
+            {
+                "key": "10000103",        
+                "serviceName": "CANCER",    
+                "image": "https://images.pexels.com/photos/6984601/pexels-photo-6984601.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",      
+                "description": "Cancer is a condition where cells in a specific part of the body grow and reproduce uncontrollably. The cancerous cells can invade and destroy surrounding healthy tissue, including organs. Cancer sometimes begins in one part of the body before spreading to other areas. This process is known as metastasis."        
+            },
+            {
+                "key": "10000104",        
+                "serviceName": "NEUROLOGY",    
+                "image": "https://images.pexels.com/photos/3225618/pexels-photo-3225618.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",      
+                "description": "Neurology is a branch of medicine dealing with disorders of the nervous system. Neurology deals with the diagnosis and treatment of all categories of conditions and disease involving the central and peripheral nervous systems, including their coverings, blood vessels, and all effector tissue, such as muscle."        
+            },
+            {
+                "key": "10000105",        
+                "serviceName": "DENTAL CARE",    
+                "image": "https://images.pexels.com/photos/4269362/pexels-photo-4269362.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",       
+                "description": "Oral hygiene is the practice of keeping one's mouth clean and free of disease and other problems by regular brushing of the teeth and cleaning between the teeth. It is important that oral hygiene be carried out on a regular basis to enable prevention of dental disease and bad breath. "        
+            },
+            {
+                "key": "10000106",        
+                "serviceName": "BLOOD TEST",    
+                "image": "https://images.pexels.com/photos/6823509/pexels-photo-6823509.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",      
+                "description": "Blood is a body fluid in humans and other animals that delivers necessary substances such as nutrients and oxygen to the cells and transports metabolic waste products away from those same cells. In vertebrates, it is composed of blood cells suspended in blood plasma."        
+            },
+                
+            {
+                "key": "10000107",        
+                "serviceName": "PHARMECY",    
+                "image": "https://images.pexels.com/photos/6074923/pexels-photo-6074923.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",      
+                "description": "Pharmacy is the clinical health science that links medical science with chemistry and it is charged with the discovery, production, disposal, safe and effective use, and control of medications and drugs."        
+            },
+                
+            {
+                "key": "10000108",        
+                "serviceName": "OUTDOOR CHECKUP",    
+                "image": "https://images.pexels.com/photos/5355828/pexels-photo-5355828.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",   
+                "description": "A clinic is a health facility that is primarily focused on the care of outpatients. Clinics can be privately operated or publicly managed and funded."        
+            },
+            {
+                "key": "10000115",        
+                "serviceName": "QUALIFIED DOCTORS",    
+                "image": "https://images.pexels.com/photos/4173251/pexels-photo-4173251.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",     
+                "description": "A physician, medical practitioner, medical doctor, or simply doctor, is a professional who practices medicine, which is concerned with promoting, maintaining or restoring health through the study, diagnosis, prognosis and treatment of disease, injury, and other physical and mental impairments."        
+            },
+                
+            {
+                "key": "10000109",        
+                "serviceName": "EMERGENCY CARE",    
+                "image": "https://images.pexels.com/photos/263402/pexels-photo-263402.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",       
+                "description": "Emergency Medical Services, more commonly known as EMS, is a system that provides emergency medical care. Once it is activated by an incident that causes serious illness or injury, the focus of EMS is emergency medical care of the patient(s). ... Trauma systems, hospitals, trauma centers, and specialty care centers."        
+            },    
+            
+                
+            {
+                "key": "10000114",        
+                "serviceName": "OPERATION THEATRE",    
+                "image": "https://images.pexels.com/photos/3376790/pexels-photo-3376790.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",     
+                "description": "An operating theater is a facility within a hospital where surgical operations are carried out in an aseptic environment. Historically, the term operating theatre referred to a non-sterile, tiered theater or amphitheater in which students and other spectators could watch surgeons perform surgery. "        
+            }
+        
+    
+    ]
+
+}

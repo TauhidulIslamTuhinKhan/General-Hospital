@@ -74,12 +74,12 @@ const Home = () => {
                     <p>It’s easy to get confused when it comes to health and nutrition. Even qualified experts often seem to hold opposing opinions, which can make it difficult to figure out what you should actually be doing to optimize your health.</p>
                 </div>
                     <div className="row">
-                        <div className="col-lg-6">
+                        <div className="col-lg-6 col-md-6">
                             <div>
                                 <img className="img-fluid w-100" src="https://images.pexels.com/photos/5214995/pexels-photo-5214995.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=800" alt="doc-img" />
                             </div>
                         </div>
-                        <div className="col-lg-6">
+                        <div className="col-lg-6 col-md-6">
                             <div className="p-5 right-text">
                                 <h4>Dr. Alisha Ayat Arony</h4>
                                 <p>MBBS, MPH, MEDICINE, SURGERY</p>
@@ -124,7 +124,7 @@ const Home = () => {
                         <p>A medical specialty is a branch of medical practice that is focused on a defined group of patients, diseases, skills, or philosophy. Examples include children, cancer, laboratory medicine, or primary care.</p>
                     </div>
                     <div className="row">
-                        <div className="col-lg-3">
+                        <div className="col-lg-3 col-md-6">
                             <div>
                                 <div className="img text-center bg-light">
                                     <img className="img-fluid w-100" src="https://images.pexels.com/photos/5327580/pexels-photo-5327580.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="doc-img" />
@@ -134,7 +134,7 @@ const Home = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-3">
+                        <div className="col-lg-3 col-md-6">
                             <div>
                                 <div className="img text-center bg-light">
                                     <img className="img-fluid w-100" src="https://images.pexels.com/photos/6129500/pexels-photo-6129500.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="doc-img" />
@@ -144,7 +144,7 @@ const Home = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-3">
+                        <div className="col-lg-3 col-md-6">
                             <div>
                                 <div className="img text-center bg-light">
                                     <img className="img-fluid w-100" src="https://images.pexels.com/photos/8376226/pexels-photo-8376226.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="doc-img" />
@@ -154,7 +154,7 @@ const Home = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-3">
+                        <div className="col-lg-3 col-md-6">
                             <div>
                                 <div className="img text-center bg-light">
                                     <img className="img-fluid w-100" src="https://images.pexels.com/photos/5452195/pexels-photo-5452195.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="doc-img" />
