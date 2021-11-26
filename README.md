@@ -1,20 +1,12 @@
-# Nobarun General Hospital
+# Nobarun Care
 
 WebSite Link : https://nobarun-care.web.app/
 
-## Health is Wealth
-### Our Speacial Health Tips for You
-Limit sugary drinks, 
-Eat nuts and seeds, 
-Avoid ultra-processed foods, 
-Don’t fear coffee, 
-Eat fatty fish, 
-Feed your gut bacteria 
+## This is a Health care website
+## Here Implemented firebase google, email and password authentication system.
+## Here the client needs to register or login before taking any service.
 
 
-### Take your Sugessions from  Our Speacial Doctor
-Just Call this Number : +88012345678901
 
 
-### We care you because We believe in future ...
 
